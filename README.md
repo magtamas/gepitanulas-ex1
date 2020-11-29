@@ -1,2 +1,2 @@
-# gepitanulas-ex1
-Linear Regression
+# Linear Regression
+
