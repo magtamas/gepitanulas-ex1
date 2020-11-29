@@ -13,7 +13,7 @@ def warmUpExercise():
     #               represent the return values (at the top of the file)
     #
 
-
+    A = numpy.identity(5)
 
     # ===========================================
     return A

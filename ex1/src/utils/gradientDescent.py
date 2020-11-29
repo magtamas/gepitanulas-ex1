@@ -23,7 +23,10 @@ def gradientDescent(X, y, theta, alpha, num_iters):
         # tmp(2) = theta(2) - alpha*(sum((X*theta-y)*X(:,2)')/m);
         # theta = tmp;
 
+        hyp = X.dot(theta)
 
+        theta[0] = theta[0] - alpha * (np.transpose(hyp - y).dot(X[:,0]) / m)
+        theta[1] = theta[1] - alpha * (np.transpose(hyp - y).dot(X[:,1]) / m)
 
         # ============================================================
 
